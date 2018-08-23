@@ -1,17 +1,15 @@
 require 'pry'
 
- class Hash
-  def keys_of(arguments)
-    array =[]
-    idx = 0
-    while idx < arguments.size
-    each {|k, v|
-      if v == arguments[idx]
-        array << k
-      end
-      }
-      idx += 1
+class Hash
+ def keys_of(arguments)
+  list_of_keys = []
+   argument.each do |arg|
+    map do |key,value|
+     if arg == value
+    list_of_keys << key
     end
-    array
+   end
   end
+  listOfKeys
+ end
 end
