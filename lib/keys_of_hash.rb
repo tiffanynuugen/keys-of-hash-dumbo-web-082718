@@ -1,6 +1,7 @@
 require 'pry'
- class Hash	class Hash
-  def keys_of(arguments)	 
+
+ class Hash
+  def keys_of(arguments)
     array =[]
     idx = 0
     while idx < arguments.size
@@ -12,5 +13,5 @@ require 'pry'
       idx += 1
     end
     array
-  end	  
-end 	
+  end
+end
